@@ -3,7 +3,7 @@ $(document).ready(function () {
     const id = params.get('id');
 
     $.ajax({
-        url: `https://api.spoonacular.com/recipes/${id}/information?apiKey=c25e2d349ba842ee8186ded1ff30b942`
+        url: `https://api.spoonacular.com/recipes/${id}/information?apiKey=3cc602c4888c404f97f95f614a29588e`
     }).done(function (data) {
         $('.recipe').append(`<h3 class="recipe-name">${data.title}</h3><img src="${data.image}"></img>`);
         data.extendedIngredients.forEach(ingredient => {
